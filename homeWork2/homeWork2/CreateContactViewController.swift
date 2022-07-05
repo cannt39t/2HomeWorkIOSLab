@@ -39,7 +39,7 @@ class CreateContactViewController: UIViewController {
         
         let newContact = Contact(name: unwrapName, number: unwrapNumber)
         delegate?.saveContact(contact: newContact)
-        
+        navigationController?.popViewController(animated: true)
         
         
     }
